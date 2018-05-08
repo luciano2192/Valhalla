@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      height: 20vh;
+    }
+
+    .div1 {
+      background: lightblue;
+      width: 50vw;
+    }
+
+    .div2 {
+      background: goldenrod;
+      width: 50vw;
+    }
+
+    nav {
+      background: purple;
+      width: 100vw;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-right: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      background: green;
+      padding: 10px;
+    }
+
+    .contenedor-main {
+      margin-top: 131px;
+      display: flex;
+      justify-content: center;
+      /* margin-top: 130px; */
+    }
+
+    .main {
+      background: yellow;
+      width: 940px;
+      height: 2500px;
+    }
+
+    section ul {
+      padding: 0;
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    section ul li {
+      background: white;
+      border-radius: 8px;
+      width: 20vw;
+      margin-top: 5vh;
+    }
+
+    section ul li img {
+      width: 20vw;
+      border-top-right-radius: 8px;
+      border-top-left-radius: 8px;
+      border-bottom: 6px solid black;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      height: 50vh;
+      background: lightpink;
+    }
+
+    /* Formulario */
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50vw;
+        background-color: lightblue;
+        border: 1px solid white;
+    }
+    .form-field {
+        margin: 0;
+        padding: 0;
+        width: 50vw;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        border: 1px solid black;
+        overflow: hidden;
+    }
+    .form-field:last-child {
+        height: 20vh;
+        align-items:flex-start;
+    }
+    form input {
+        width: 48vw;
+        height: 10vh;
+    }
+    form textarea {
+        width: 48vw;
+        height: 20vh;
+    }
+    form img {
+        width: 32px;
+        padding: 2vw;
+    }
+
+    /* Redes sociales */
+    .social-links {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        width: 30vw;
+        height: 50vh;
+    }
+    .social-links li {
+        display: flex;
+        align-items: center;
+        height: 10vh;
+        list-style: none;
+    }
+    .social-links li:hover {
+        color: #fff;
+        text-decoration: underline;        
+    }
+    .social-links li a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+    .social-links img {
+        width: 50px;
+    }
+    .social-links span {
+        margin-left: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    /* Mapa */
+    .map {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+    }
+    .contacto {
+        display: flex;
+        justify-content: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <nav>
+      <ul>
+        <li><a href="index.htlm">Inicio</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="contenedor-main">
+    <main class="main">
+      <section>
+        <h2>Contacto</h2>
+        <div class="contacto">
+            <form>
+                <div class="form-field"><img src="img/iconos/person-icon.png"><input type="text" name="nombre" placeholder="Tu nombre"></div>
+                <div class="form-field"><img src="img/iconos/email-icon.png"><input type="email" name="email" placeholder="Tu e-mail"></div>
+                <div class="form-field"><img src="img/iconos/phone-icon.png"><input type="phone" name="telefono" placeholder="Tu teléfono (opcional)"></div>
+                <div class="form-field"><img src="img/iconos/pencil-icon.png"><input type="text" name="asunto" placeholder="Asunto del mensaje"></div>
+                <div class="form-field"><img src="img/iconos/envelope-icon.png"><textarea placeholder="Tu mensaje"></textarea></div>
+            </form>
+        </div>
+    </section>
+    </main>
+  </div>
+  <footer>
+    <ul class="social-links">
+        <li><a href=""><img src="img/iconos/facebook-icon.png"><span class="text">facebook.com/valhalla</span></a></li>
+        <li><a href=""><img src="img/iconos/twitter-icon.png"><span class="text">twitter.com/valhalla</span></a></li>
+        <li><a href=""><img src="img/iconos/instagram-icon.png"><span class="text">instagram.com/valhalla</span></a></li>        
+    </ul>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.4727537228473!2d-58.37535568525251!3d-34.61749166573304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb2b201a10cf%3A0x6f53d35860f67473!2sVALHALLA+Bar+Vikingo!5e0!3m2!1sen!2sus!4v1525806824834" width="280" height="280" frameborder="0" style="border:0" allowfullscreen></iframe>        
+    </div>
+  </footer>
+</body>
+
+</html>
