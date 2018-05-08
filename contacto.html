@@ -108,30 +108,36 @@
         border: 1px solid white;
     }
     .form-field {
-        margin: 0;
-        padding: 0;
-        width: 50vw;
-        height: 10vh;
-        display: flex;
-        align-items: center;
-        border: 1px solid black;
-        overflow: hidden;
+      margin: 0;
+      padding: 0;
+      width: 50vw;
+      height: 10vh;
+      display: flex;
+      align-items: center;
+      border: 1px solid black;
+      overflow: hidden;
+    }
+    .form-field.message {
+      height: 20vh;
+      align-items:flex-start;
     }
     .form-field:last-child {
-        height: 20vh;
-        align-items:flex-start;
+      justify-content:flex-end;
     }
     form input {
-        width: 48vw;
-        height: 10vh;
+      width: 48vw;
+      height: 10vh;
     }
     form textarea {
-        width: 48vw;
-        height: 20vh;
+      width: 48vw;
+      height: 20vh;
     }
     form img {
-        width: 32px;
-        padding: 2vw;
+      width: 32px;
+      padding: 2vw;
+    }
+    form .btn-submit {
+      width: 20vw;
     }
 
     /* Redes sociales */
@@ -217,9 +223,12 @@
                   <img src="img/iconos/pencil-icon.png">
                   <input type="text" name="asunto" placeholder="Asunto del mensaje">
                 </div>
-                <div class="form-field">
+                <div class="form-field message">
                   <img src="img/iconos/envelope-icon.png">
                   <textarea placeholder="Tu mensaje"></textarea>
+                </div>
+                <div class="form-field">
+                  <input type="submit" class="btn-submit" value="Enviar">
                 </div>
             </form>
         </div>
