@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +13,8 @@
         <div class="logo">
             <img src="img/odin-logo.png" class="logo" alt="The New Valhalla logo">
         </div>
-        <nav class="primary">
+
+        <nav class="navbar">
             <a href="#">Inicio</a>
             <a href="#">¿Cómo comprar?</a>
             <a href="#">Sucursales</a>
@@ -22,10 +23,58 @@
     </header>
     <main>
         <div class="big-image-container">
-            <img src="img/hamburguesas/hamburguesas-index-2.jpg" class="mySlides" width="100%" height="100%">
-            <img src="#" class="mySlides" width="100%" height="100%">
-            <img src="img/hamburguesas/hamburguesas-index-2.jpg" class="mySlides" width="100%" height="100%">
-            <img src="img/hamburguesas/hamburguesas-index-2.jpg" class="mySlides" width="100%" height="100%">
+            <div class="my-slides slide1" style="background-image: url('img/hamburguesas/hamburguesas-1.jpg');">
+                <div class="text-container">
+                    <h2>Odin con cheddar</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                    qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+            <div class="my-slides slide2" style="background-image: url('img/hamburguesas/hamburguesas-2.jpg');">
+                <div class="text-container">                
+                <h2>Thor con bacon</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+            <div class="my-slides slide3" style="background-image: url('img/hamburguesas/hamburguesas-3.jpg');">
+                <div class="text-container">                
+                    <h2>Heimdall con dijon</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+            <div class="my-slides slide4" style="background-image: url('img/hamburguesas/hamburguesas-4.jpg');">
+                <div class="text-container">                
+                    <h2>Freyr vegano</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
@@ -46,23 +95,6 @@
             <p>Google Map</p>
         </div>
     </footer>
-    <script>
-        var slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if(slideIndex > slides.length) {
-                slideIndex = 1
-            }
-            slides[slideIndex-1].style.display = "block";
-            setTimeout(showSlides,2000);
-        }
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
