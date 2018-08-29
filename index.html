@@ -1,188 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <style>
-    body {
-      padding: 0;
-      margin: 0;
-      font-family: sans-serif;
-    }
-
-    header {
-      position: fixed;
-      top: 0;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      height: 20vh;
-    }
-
-    .div1 {
-      background: lightblue;
-      width: 50vw;
-    }
-
-    .div2 {
-      background: goldenrod;
-      width: 50vw;
-    }
-
-    nav {
-      background: purple;
-      width: 100vw;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-    }
-
-    nav ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-    }
-
-    nav ul li {
-      margin-right: 25px;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: white;
-      background: green;
-      padding: 10px;
-    }
-
-    .contenedor-main {
-      margin-top: 131px;
-      display: flex;
-      justify-content: center;
-      /* margin-top: 130px; */
-    }
-
-    .main {
-      background: yellow;
-      width: 940px;
-      height: 2500px;
-    }
-
-    section ul {
-      padding: 0;
-      list-style: none;
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-    }
-
-    section ul li {
-      background: white;
-      border-radius: 8px;
-      width: 20vw;
-      margin-top: 5vh;
-    }
-
-    section ul li img {
-      width: 20vw;
-      border-top-right-radius: 8px;
-      border-top-left-radius: 8px;
-      border-bottom: 6px solid black;
-    }
-
-    footer {
-      height: 50vh;
-      background: lightpink;
-    }
-  </style>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The New Valhalla</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="js/main.js"></script>
 </head>
-
 <body>
-  <header>
-    <div class="div1"></div>
-    <div class="div2"></div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="galeria.html">Galeria</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
-  <div class="contenedor-main">
-    <main class="main">
-      <section>
-        <h2>Hamburguesas</h2>
-        <ul>
-          <li><img src="img/hamb1.jpg" alt="hamburguesa">
-            <h3>Hamburguesa 1</h3>
-            <p>$</p><button>+</button></li>
-          <li><img src="img/hamb2.jpg" alt="hamburguesa">
-            <h3>Hamburguesa 2</h3>
-            <p>$</p><button>+</button></li>
-          <li><img src="img/hamb3.jpg" alt="hamburguesa">
-            <h3>Hamburguesa 3</h3>
-            <p>$</p><button>+</button></li>
-        </ul>
-      </section>
-      <section>
-        <h2>Adicionales</h2>
-        <ul>
-          <li><img src="img/cheddar.jpg" alt="queso cheddar">
-            <h3>Cheddar</h3>
-            <p>$</p><button>+</button></li>
-          <li><img src="img/pepinos.jpg" alt="pepinos">
-            <h3>Pepinos</h3>
-            <p>$</p><button>+</button></li>
-          <li><img src="img/bacon.jpg" alt="bacon">
-            <h3>Bacon</h3>
-            <p>$</p><button>+</button></li>
-          <li><img src="img/lechuga.jpg" alt="lechuga">
-            <h3>Lechuga</h3>
-            <p>$</p><button>+</button></li>
-          <li><img src="img/tomate.jpg" alt="tomate">
-            <h3>Tomate</h3>
-            <p>$</p><button>+</button></li>
-          <li><img src="img/huevo.jpg" alt="huevo frito">
-            <h3>Huevo</h3>
-            <p>$</p><button>+</button></li>
-        </ul>
-      </section>
-      <section>
-        <h2>Guarnicion</h2>
-        <ul>
-          <li><img src="img/papas.jpg" alt="papas fritas">
-            <h3>Papas fritas</h3>
-            <p>$</p><button>+</button></li>
-          <li><img src="img/arosdecebolla.jpg" alt="aros de cebolla">
-            <h3>Aros de cebolla</h3>
-            <p>$</p><button>+</button></li>
-          <li><img src="img/bastonesqueso.jpg" alt="bastones de queso">
-            <h3>Bastones de muzzarella</h3>
-            <p>$</p><button>+</button></li>
-        </ul>
-      </section>
-      <section>
-        <h2>Bebidas</h2>
-        <ul>
-          <li><img src="img/coca.jpg" alt="gaseosa">
-            <h3>Coca-Cola</h3>
-            <p>$</p><button>+</button></li>
-          <li><img src="img/aguasaborizada.jpg" alt="agua saborizada">
-            <h3>Agua saborizada</h3>
-            <p>$</p><button>+</button></li>
-          <li><img src="img/cerveza.jpg" alt="cerveza">
-            <h3>Cerveza</h3>
-            <p>$</p><button>+</button></li>
-        </ul>
-      </section>
+    <header>
+        <div class="logo">
+            <img src="img/odin-logo.png" class="logo" alt="The New Valhalla logo">
+        </div>
+        <nav class="primary">
+            <a href="#">Inicio</a>
+            <a href="#">¿Cómo comprar?</a>
+            <a href="#">Sucursales</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <div class="big-image-container">
+            <img src="img/hamburguesas/hamburguesas-index-2.jpg" class="mySlides" width="100%" height="100%">
+            <img src="#" class="mySlides" width="100%" height="100%">
+            <img src="img/hamburguesas/hamburguesas-index-2.jpg" class="mySlides" width="100%" height="100%">
+            <img src="img/hamburguesas/hamburguesas-index-2.jpg" class="mySlides" width="100%" height="100%">
+        </div>
     </main>
-  </div>
-  <footer>
+    <footer>
+        <nav class="social">
+            <a href="#"><img src="img/social/whatsapp.png" width="40px" height="40px"></a>            
+            <a href="#"><img src="img/social/instagram.png" width="40px" height="40px"></a>
+            <a href="#"><img src="img/social/facebook.png" width="40px" height="40px"></a>
+            <a href="#"><img src="img/social/twitter.png" width="40px" height="40px"></a>
+        </nav>
+        <div class="info">
+            <p>Sucursales</p>
+            <ul>
+                <li>Sucursal 1: Av. Corrientes 1234 - (011) 4000-0900</li>
+                <li>Sucursal 2: Av. Cabildo 2000 - (011) 4000-0800</li>
+            </ul>
+        </div>
+        <div class="map">
+            <p>Google Map</p>
+        </div>
+    </footer>
+    <script>
+        var slideIndex = 0;
+        showSlides();
 
-  </footer>
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if(slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides,2000);
+        }
+    </script>
 </body>
-
 </html>
